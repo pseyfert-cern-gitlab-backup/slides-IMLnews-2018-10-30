@@ -1,49 +1,74 @@
 \maketitle
 
-\section{introduction}
-\subsection{introduction}
-%\begin{frame}[fragile]{introduction}
-\begin{frame}{introduction}
-\begin{itemize}
-\item optimising code is sometimes considered a black art
-%\begin{lstlisting}
-%// branchless implementation of min/max for unsigned
-%static inline unsigned min(unsigned a, unsigned b) noexcept
-%{
-%    const unsigned mask = -(a < b);
-%    return (a \& mask) | (b \& ~mask);
-%}
-%static inline unsigned max(unsigned a, unsigned b) noexcept
-%{
-%    const unsigned mask = -(a > b);
-%    return (a \& mask) | (b \& ~mask);
-%}
-%\end{lstlisting}
-\item true to some extent -- occasionally, you need the odd dirty trick
-\item but most of the time, it's down to:
-\end{itemize}
-\end{frame}
 \begin{frame}
-  \frametitle{conclusion}
-  
-  \begin{itemize}
-      \item headache ahead
-  \end{itemize}
-
-  \vspace{.3\textheight}
-
-  \IfFileExists{./QR2.png}{
-  \footnotesize{slides (excl.\ cern logo) will appear on}
-    
-    \gitlablink\includegraphics[width=.2\textwidth]{./QR2.png}
-}{}
+  \frametitle{HEP Software Foundation -- Community White Paper}
+  \begin{columns}
+    \begin{column}{.3\textwidth}
+      \includegraphics[width=\textwidth]{./hsf_logo_angled.png}
+    \end{column}
+    \begin{column}{.7\textwidth}
+      \begin{itemize}
+        \item editing meeting on Friday
+          \begin{itemize}
+            \item writeme
+          \end{itemize}
+      \end{itemize}
+    \end{column}
+  \end{columns}
 \end{frame}
-
-\appendix
 
 \begin{frame}
-  \frametitle{BACKUP}
-  backup is for people who can't improvise
-
-  (yes, that's a cheap excuse for not preparing backup slides)
+  \frametitle{Recordings online}
+  \begin{columns}
+    \begin{column}{.6\textwidth}
+      \includegraphics[width=.95\textwidth]{./rec.png}
+    \end{column}
+    \begin{column}{.4\textwidth}
+      \begin{itemize}
+        \item Instead of written minutes we now organise recordings for talks
+        \item (with approval by the speaker, not automatically)
+        \item e.g.\ last meeting's talks accessible on the indico agenda
+        \item {\Large{Big thanks to the recording service}}
+      \end{itemize}
+    \end{column}
+  \end{columns}
 \end{frame}
+
+\begin{frame}
+  \frametitle{Upcoming events}
+  \begin{description}
+    \item[2018-10-31] \myhref{https://indico.cern.ch/event/760693/}{Data science seminar: Full Event Interpretation at Belle 2}
+    \item[2018-11-30] \myhref{https://indico.cern.ch/event/762583/}{Next IML meeting (Filtration plant 222/R-001)}
+  \end{description}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Today's meeting}
+  \includegraphics[width=.9\textwidth]{./agenda.png}
+\end{frame}
+
+\setbeamertemplate{background canvas}{%
+  \includegraphics[width=\paperwidth,height=\paperheight]{banner.pdf}%
+  }   
+  \begin{frame}[t]
+    \visible<2>{
+      {~}
+      \vspace{.5\textheight}
+      \begin{columns}
+        \begin{column}{.35\textwidth}
+        \end{column}
+        \begin{column}{.65\textwidth}
+          \begin{block}{}
+            \IfFileExists{./QR2.png}{
+              \footnotesize{slides (excl.\ cern logo) will appear on}
+
+              \gitlablink
+
+              \includegraphics[width=.2\textwidth]{./QR2.png}
+            }{}
+          \end{block}
+        \end{column}
+      \end{columns}
+    }
+  \end{frame}
+  \beamertemplateshadingbackground{Black!03}{White}
